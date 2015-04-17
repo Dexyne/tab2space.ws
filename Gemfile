@@ -6,6 +6,9 @@ gem 'middleman', '~>3.3.10'
 gem 'slim', '~> 3.0.3'
 gem 'nokogiri', '~> 1.6.6.2'
 
+# For feed.xml.builder
+gem 'builder', '~> 3.0'
+
 # Middleman plugin
 gem 'middleman-livereload', '~> 3.1.0'
 gem 'middleman-deploy', '~> 1.0'
