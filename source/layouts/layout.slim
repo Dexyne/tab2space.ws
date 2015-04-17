@@ -1,0 +1,30 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='utf-8')
+    meta(content='on' http-equiv='cleartype')
+    meta(content='IE=edge,chrome=1' http-equiv='X-UA-Compatible')
+    meta(name='viewport' content='initial-scale=1, maximum-scale=1')
+    
+    title = current_page.data.title || "The Middleman"
+    
+    - unless current_page.data.description.nil?
+      meta(name='description' content="#{current_page.data.description }")
+    
+    = stylesheet_link_tag 'normalize', 'app'
+
+    /[if lt IE 9]
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+
+    = feed_tag :atom, "#{blog.options.prefix}/feed.xml", title: 'Atom Feed'
+  
+  body
+    nav#menu.menu(role='navigation')
+      .l-container
+        = link_to "Accueil", '/', class: 'menu-item'
+
+    #page
+      main#page-content.l-container(role='main')
+          = yield
+    
+    = javascript_include_tag 'app'
