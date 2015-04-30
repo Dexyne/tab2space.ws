@@ -104,6 +104,9 @@ configure :build do
   # Use WebP for pictures
   activate :webp
 
+  # Use GitHub emoji
+  activate :emoji
+
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 
@@ -116,8 +119,8 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
-  deploy.remote   = 'git@github.com:Dexyne/dexyne.github.io.git' # remote name or git url, default: origin
-  deploy.branch   = 'master' # default: gh-pages
+  deploy.remote = 'git@github.com:Dexyne/dexyne.github.io.git' # remote name or git url, default: origin
+  deploy.branch = 'master' # default: gh-pages
   # deploy.strategy = :submodule # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.commit_message = 'custom-message' # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
   deploy.build_before = true
