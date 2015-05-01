@@ -29,10 +29,15 @@ html(lang='fr')
 
     #page
       main#page-content.l-container(role='main')
-        header
-          h1 = current_page.data.title
+        - unless current_article.nil?
+          header
+            time.article-published-date(pubdate datetime=current_article.date) 
+              = 'Ecris le ' + current_article.date.strftime('%d/%m/%Y')
+            = ', par ' + current_article.data.author
 
-        section 
+            h1 = current_page.data.title unless current_page.data.title.blank?
+        
+        section
           = yield
-    
+
     = javascript_include_tag 'app'
