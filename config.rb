@@ -2,7 +2,7 @@
 
 Time.zone = 'Paris'
 
-set :site_title, '&rarr;Tab2Space'
+set :site_name, '&rarr;Tab2Space'
 
 set :slim, pretty: true
 
@@ -83,11 +83,13 @@ end
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def site_title(title)
+    return title + ' | ' + site_name unless title.blank?
+    site_name
+  end
+end
+
 
 # Build-specific configuration
 configure :build do
