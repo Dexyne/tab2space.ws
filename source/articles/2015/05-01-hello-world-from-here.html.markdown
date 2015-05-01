@@ -8,7 +8,7 @@ description: >
   (Unity, Unreal Engine, Game Maker), ainsi que le graphisme numérique/digital 
   (Krita, MyPaint, Blender) ou non.
 author: Aurélien Léger
-published: false
+published: true
 ---
 
 Un premier billet pour une petite présentation de moi !<br>
