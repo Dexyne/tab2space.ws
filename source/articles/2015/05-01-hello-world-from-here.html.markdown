@@ -1,12 +1,13 @@
 ---
 title: Hello World! (from here)
-date: 2015-04-30
+date: 2015-05-01
 tags: hello world, presentation, développement, web, programmation, gamedev
 description: >
-  Hello World! Présentation du site-blog d'un développeur ayant
+  Présentation du site-blog d'un développeur ayant
   pour attrait le web (Ruby on Rails) et les jeux vidéo
-  (Unity, Unreal Engine, Game Maker), ainsi que le graphisme matériel ou
-  numérique/digital (Krita, MyPaint, Blender).
+  (Unity, Unreal Engine, Game Maker), ainsi que le graphisme numérique/digital 
+  (Krita, MyPaint, Blender) ou non.
+author: Aurélien Léger
 published: false
 ---
 
@@ -29,7 +30,7 @@ Côté bases de données j'utilise principalement [PostgreSQL](http://www.postgr
 mais j'ai commencé à en apprendre plus sur les bases de données __NoSQL__ avec notamment
 [ArangoDB](https://www.arangodb.com/) (une base de données multi-model).
 
-Côté JavaScript je reste plutôt soft puisque je ne l'utilise pas pour de grosses
+Côté __JavaScript__ je reste plutôt soft puisque je ne l'utilise pas pour de grosses
 applications actuellement.<br>
 J'ai toutefois "joué" avec [Node.js](https://nodejs.org/) afin de tester l'environnement.<br>
 J'aimerais toutefois en apprendre plus sur [Ember.js](http://emberjs.com/) en tant
@@ -38,9 +39,10 @@ que framework JavaScript (côté client).
 Je souhaite aussi explorer plus en détail [SVG](https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics) 
 puisque actuellement je n'ai pas de réel expérience dessus, mais cette technologie 
 m'intéresse grandement.
+En partie pour la création d'__interfaces utilisateurs__ (UI/UX).
 
 Quelqu'un a dit jeux vidéo ?
-------------
+----------------------------
 
 Une autre de mes passions est celle du jeux vidéo, autant côté joueur que créateur.
 C'est pourquoi je passe du temps à en apprendre plus sur le sujet.
@@ -50,13 +52,14 @@ Celui-ci est "simple" et accessible en plus de disposer d'énormément de possib
 L'[Unreal Engine](https://www.unrealengine.com/) m'intéresse sur quelques points 
 et c'est pourquoi je regarde quelques articles et tutoriaux dessus.
 
-Plus globalement j'en apprends plus sur les mécaniques de jeux ou __Game Design__.
+Je regarde aussi autour du jeux vidéo avec Ruby, et plus globalement j'en 
+apprends plus sur les mécaniques de jeux ou __Game Design__.
 
 Pour ce qui est du web je regarde aussi ce qu'il se fait et je me suis déjà essayé
 à quelques outils mais sans aller très loin.<br>
 Peut-être un jour cela dit. :)
 
-Nous avons (Guillaume Polaert et moi) participer à la 
+Nous avons (Guillaume Polaert et moi) participé à la 
 [Ludum Dare 31](http://ludumdare.com/compo/ludum-dare-31/) qui avait pour
 thème : _Entire Game on One Screen_ ou _Faire un Jeu sur Un Ecran_.<br>
 Notre jeu est un __puzzle game__ et s'intitule 
@@ -69,3 +72,34 @@ J'ai essayé la __Ludum Dare 32__ seul sans avoir pu terminé le projet
 (Guillaume ayant été occupé à ce moment-là).
 Ce fut toutefois une bonne expérience et j'ai pu apprendre certaines choses, 
 peut-être écrirais-je quelque chose là-dessus.
+
+Illustration, dessin, graphisme
+-------------------------------
+
+Un de mes loisirs est le dessin ou plus généralement l'illustration/graphisme.
+
+J'aime dessiner ou regarder &ndash; en apprendre plus sur le sujet via des tutoriaux
+ou des vidéos de speed painting. De même que j'apprécie la modélisation 3D même si
+pour l'instant je n'y touche pas encore beaucoup.
+
+Je ne dessine toutefois pas assez pour en écrire des articles donc je ne sais pas
+si il y en aura pour l'instant mais ce n'est pas impossible que quelques uns se
+glissent par-ci par-là.
+
+Pour les logiciels j'utilise principalement [Krita](https://krita.org/), 
+[MyPaint](http://mypaint.intilinux.com/) et parfois [GIMP](http://www.gimp.org/) 
+pour l'illustration, et [Blender](https://www.blender.org/) pour la 3D.
+
+Conclusion
+----------
+
+Je pense avoir fait le tour sur moi et vous avez sans doute compris que j'allais
+écrire des articles autour du développement web, ainsi que du jeux vidéo (et pourquoi 
+pas sur l'illustration).
+
+Je ne sais pas encore si je pourrais avoir une certaine régularité dans la publication
+de mes articles mais je m'y essayerais. :yum:
+
+Le site manque encore de fonctionnalités/éléments tel qu'un système de commentaires
+ou même d'un pied de page à l'instant où j'écris cet article mais je compte corriger
+tout ça prochainement. :smile:
