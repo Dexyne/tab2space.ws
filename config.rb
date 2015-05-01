@@ -2,6 +2,8 @@
 
 Time.zone = 'Paris'
 
+set :site_title, '&rarr;Tab2Space'
+
 set :slim, pretty: true
 
 set :css_dir, 'stylesheets'

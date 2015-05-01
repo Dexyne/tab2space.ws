@@ -6,7 +6,7 @@ html(lang='fr')
     meta(content='IE=edge,chrome=1' http-equiv='X-UA-Compatible')
     meta(name='viewport' content='initial-scale=1, maximum-scale=1')
     
-    title = current_page.data.title || "Tab2Space"
+    title = current_page.data.title + ' &ndash; ' + site_title || site_title
     
     - unless current_page.data.description.nil?
       meta(name='description' content="#{current_page.data.description }")
@@ -21,7 +21,7 @@ html(lang='fr')
   body
     header(role='header')
       .l-container
-        h1 = current_page.data.title || "Tab2Space"
+        h1 = site_title
 
     nav#menu.menu(role='navigation')
       .l-container
@@ -29,6 +29,9 @@ html(lang='fr')
 
     #page
       main#page-content.l-container(role='main')
+        header
+          h1 = current_page.data.title
+
         section 
           = yield
     
