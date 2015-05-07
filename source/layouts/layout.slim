@@ -19,25 +19,44 @@ html(lang='fr')
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: 'Atom Feed'
   
   body
-    header(role='header')
+    header#header.header(role='header')
       .l-container
         h1 = site_name
+
+      aside.l-sidebar
+        / TODO: profile summary
 
     nav#menu.menu(role='navigation')
       .l-container
         = link_to "Accueil", '/', class: 'menu-item'
 
-    #page
-      main#page-content.l-container(role='main')
-        - unless current_article.nil?
-          header
-            time.article-published-date(pubdate datetime=current_article.date) 
-              = 'Ecris le ' + current_article.date.strftime('%d/%m/%Y')
-            = ', par ' + current_article.data.author
+      aside.l-sidebar
+        / TODO: social links (twitter, G+, etc.)
 
-            h1 = current_page.data.title unless current_page.data.title.blank?
+    #page
+      main#page-content(role='main')
+        - unless current_article.nil?
+          .l-container
+            header
+              time.article-published-date(pubdate datetime=current_article.date) 
+                = 'Ecris le ' + current_article.date.strftime('%d/%m/%Y')
+              = ', par ' + current_article.data.author
+
+              h1 = current_page.data.title unless current_page.data.title.blank?
         
-        section
-          = yield
+        .l-container
+          section
+            = yield
+
+      aside#sidebar.l-sidebar
+        h2 Par année
+        ol
+          - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+            li = link_to "#{year} (#{articles.size})", blog_year_path(year)
+
+        h2 Tags
+        ul 
+          - blog.tags.each do |tag, articles|
+            li = link_to "#{tag} (#{articles.size})", tag_path(tag)
 
     = javascript_include_tag 'app'
