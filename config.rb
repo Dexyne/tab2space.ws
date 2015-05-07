@@ -6,9 +6,9 @@ set :site_name, '&rarr;Tab2Space'
 
 set :slim, pretty: true
 
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
 
 page '/feed.xml', layout: false
 page 'CNAME', layout: false
