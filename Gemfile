@@ -14,7 +14,8 @@ gem 'middleman-livereload', '~> 3.1.0'
 gem 'middleman-deploy', '~> 1.0'
 gem 'middleman-blog', '~> 3.5.3'
 gem 'middleman-webp', '~> 0.2.7'
-gem 'middleman-emoji', '~> 0.1.0'
+# gem 'middleman-emoji', '~> 0.1.0'
+gem 'middleman-gemoji', '~> 0.0.5'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]

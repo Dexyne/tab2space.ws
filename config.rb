@@ -109,7 +109,7 @@ configure :build do
   activate :webp
 
   # Use GitHub emoji
-  activate :emoji
+  activate :gemoji
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
