@@ -12,6 +12,7 @@ html(lang='fr')
       meta(name='description' content="#{current_page.data.description }")
     
     = stylesheet_link_tag 'normalize', 'app'
+    link(rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
 
     /[if lt IE 9]
       script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
@@ -22,16 +23,24 @@ html(lang='fr')
     header#header.header(role='header')
       .l-container
         h1 = site_name
+        p 
+          | Le site d'un développeur Ruby, JavaScript et faiseur de 
+          | jeux vidéo sur Unity.
 
       aside.l-sidebar
-        / TODO: profile summary
+        = image_tag 'http://placehold.it/110x110', width: 90, height: 90
+        h2 Aurélien Léger
+        p Ruby / Game Developer.
 
     nav#menu.menu(role='navigation')
       .l-container
         = link_to "Accueil", '/', class: 'menu-item'
 
       aside.l-sidebar
-        / TODO: social links (twitter, G+, etc.)
+        = link_to 'https://twitter.com/enyxed', class: 'menu-item' do
+          span.fa.fa-twitter
+        = link_to 'https://github.com/Dexyne', class: 'menu-item' do
+          span.fa.fa-github
 
     #page
       main#page-content(role='main')
