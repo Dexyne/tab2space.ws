@@ -2,7 +2,7 @@
 
 Time.zone = 'Paris'
 
-set :site_name, '&rarr;Tab2Space'
+set :site_name, '&rarr;Tab2Space&bull;'
 
 set :slim, pretty: true
 
