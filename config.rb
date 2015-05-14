@@ -88,6 +88,27 @@ helpers do
     return title + ' | ' + site_name unless title.blank?
     site_name
   end
+
+  def license_cc_by(text: false)
+    string = link_to 'http://creativecommons.org/licenses/by/4.0/', rel: 'license' do
+      image_tag 'https://i.creativecommons.org/l/by/4.0/88x31.png',
+                alt: 'Licence Creative Commons',
+                style: 'border-width:0'
+    end
+    # if text
+    # string += '<br>'
+    # string += 'Ce(tte) <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">œuvre</span> est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licence Creative Commons Attribution 4.0 International</a>.'
+  end
+
+  def license_cc_by_sa(text: false)
+    string = link_to 'http://creativecommons.org/licenses/by-sa/4.0/', rel: 'license' do
+      image_tag 'https://i.creativecommons.org/l/by-sa/4.0/88x31.png',
+                alt: 'Licence Creative Commons',
+                style: 'border-width:0'
+    end
+    # if text
+    # <br />Ce(tte) <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">œuvre</span> est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.
+  end
 end
 
 
