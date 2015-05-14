@@ -28,9 +28,11 @@ html(lang='fr')
           | jeux vidéo sur Unity.
 
       aside.l-sidebar
-        = image_tag 'http://placehold.it/110x110', width: 90, height: 90
-        h2 Aurélien Léger
-        p Ruby / Game Developer.
+        .flex 
+          = image_tag 'http://placehold.it/110x110', width: 90, height: 90, class: 'avatar'
+          .flex-1
+            h2 Aurélien Léger
+            p Ruby / Game Developer.
 
     nav#menu.menu(role='navigation')
       .l-container
