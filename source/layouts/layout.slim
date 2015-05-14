@@ -17,7 +17,7 @@ html(lang='fr')
     /[if lt IE 9]
       script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
 
-    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: 'Atom Feed'
+    = feed_tag :atom, "/feed.xml", title: 'Atom Feed'
   
   body
     header#header.header(role='header')
@@ -40,9 +40,9 @@ html(lang='fr')
 
       aside.l-sidebar
         = link_to 'https://twitter.com/enyxed', class: 'menu-item' do
-          span.fa.fa-twitter
+          i.fa.fa-twitter
         = link_to 'https://github.com/Dexyne', class: 'menu-item' do
-          span.fa.fa-github
+          i.fa.fa-github
 
     #page
       main#page-content(role='main')
@@ -59,7 +59,7 @@ html(lang='fr')
           section
             = yield
 
-      aside#sidebar.l-sidebar
+      aside.l-sidebar
         h2 Par année
         ol
           - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
@@ -69,5 +69,28 @@ html(lang='fr')
         ul 
           - blog.tags.each do |tag, articles|
             li = link_to "#{tag} (#{articles.size})", tag_path(tag)
+
+    footer#footer.footer(role='contentinfo')
+      .l-container
+        p 
+          | Site fait avec <i class="fa fa-heart" title="amour"></i> dont les 
+          | sources sont disponibles sur 
+          | <a href="https://github.com/Dexyne/tab2space.ws" title="GitHub">
+          | <i class="fa fa-github"></i></a> sous license <strong>MIT</strong>.
+
+        p
+          ' Tous les articles sont sous license <strong><i>Creative Commons</i></strong>
+          = license_cc_by
+          '  ou <strong><i>Creative Commons BY-SA</i></strong>
+          = license_cc_by_sa
+
+
+      aside.l-sidebar
+        p 
+          = link_to 'https://github.com/Dexyne/tab2space.ws', title: 'Code source du site !' do
+            i.fa.fa-github
+
+          = link_to "/feed.xml", title: 'Atom Feed' do
+            i.fa.fa-rss-square
 
     = javascript_include_tag 'app'
