@@ -5,12 +5,12 @@ html(lang='fr')
     meta(content='on' http-equiv='cleartype')
     meta(content='IE=edge,chrome=1' http-equiv='X-UA-Compatible')
     meta(name='viewport' content='initial-scale=1, maximum-scale=1')
-    
+
     title = site_title(current_page.data.title)
-    
+
     - unless current_page.data.description.nil?
       meta(name='description' content="#{current_page.data.description }")
-    
+
     = stylesheet_link_tag 'normalize', 'app'
     link(rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
 
@@ -18,17 +18,17 @@ html(lang='fr')
       script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
 
     = feed_tag :atom, "/feed.xml", title: 'Atom Feed'
-  
+
   body
     header#header.header(role='header')
       .l-container
         h1 = site_name
-        p 
-          | Le site d'un développeur Ruby, JavaScript et faiseur de 
+        p
+          | Le site d'un développeur Ruby, JavaScript et faiseur de
           | jeux vidéo.
 
       aside.l-sidebar
-        .flex 
+        .flex
           = image_tag 'http://placehold.it/110x110', width: 90, height: 90, class: 'avatar'
           .flex-1
             h2 Aurélien Léger
@@ -49,15 +49,19 @@ html(lang='fr')
         - unless current_article.nil?
           .l-container
             header
-              time.article-published-date(pubdate datetime=current_article.date) 
+              time.article-published-date(pubdate datetime=current_article.date)
                 = 'Ecris le ' + current_article.date.strftime('%d/%m/%Y')
               = ', par ' + current_article.data.author
 
               h1 = current_page.data.title unless current_page.data.title.blank?
-        
+
         .l-container
-          section
-            = yield
+          - unless current_article.nil?
+            article.article
+              = yield
+          - else
+            section
+              = yield
 
       aside.l-sidebar
         h2 Par année
@@ -66,15 +70,15 @@ html(lang='fr')
             li = link_to "#{year} (#{articles.size})", blog_year_path(year)
 
         h2 Tags
-        ul 
+        ul
           - blog.tags.each do |tag, articles|
             li = link_to "#{tag} (#{articles.size})", tag_path(tag)
 
     footer#footer.footer(role='contentinfo')
       .l-container
-        p 
-          | Site fait avec <i class="fa fa-heart" title="amour"></i> dont les 
-          | sources sont disponibles sur 
+        p
+          | Site fait avec <i class="fa fa-heart" title="amour"></i> dont les
+          | sources sont disponibles sur
           | <a href="https://github.com/Dexyne/tab2space.ws" title="GitHub">
           | <i class="fa fa-github"></i></a> sous license <strong>MIT</strong>.
 
@@ -86,7 +90,7 @@ html(lang='fr')
 
 
       aside.l-sidebar
-        p 
+        p
           = link_to 'https://github.com/Dexyne/tab2space.ws', title: 'Code source du site !' do
             i.fa.fa-github
 
