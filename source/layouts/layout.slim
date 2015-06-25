@@ -11,7 +11,7 @@ html(lang='fr')
     - unless current_page.data.description.nil?
       meta(name='description' content="#{current_page.data.description }")
 
-    = stylesheet_link_tag 'normalize', 'app'
+    = stylesheet_link_tag 'vendor/normalize', 'app'
     link(rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
 
     /[if lt IE 9]
