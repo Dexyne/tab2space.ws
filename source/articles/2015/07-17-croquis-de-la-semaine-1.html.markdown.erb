@@ -20,7 +20,7 @@ Voici donc les croquis de la semaine :
 <% data.sketches.week_1.each do |sketch| %>
 <figure>
     <%= image_tag sketch.path, alt: "Croquis du #{sketch.datetime.day} juillet #{sketch.datetime.year}" %>
-    <figcaption>Croquis du <time datetime="#{sketch.datetime}">
+    <figcaption>Croquis du <time datetime="<%= sketch.datetime %>">
         <%= sketch.datetime.day %> juillet <%= sketch.datetime.year %></time>.
     </figcaption>
 </figure>
