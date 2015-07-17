@@ -1,0 +1,30 @@
+---
+title: "Croquis de la semaine #1 !"
+date: 2015-07-17 CEST
+tags: croquis, dessin, illustration
+description: >
+  Les croquis de la semaine numéro 1.
+author: Aurélien Léger
+published: true
+---
+
+Hoplà !
+
+J'avais prévu de sortir un croquis par jour mais j'ai préféré de changer à un
+article par semaine contenant les croquis de chaque journée.
+
+Je publierais un article le vendredi pour l'instant mais je changerais le jour
+au lundi par la suite.
+
+Voici donc les croquis de la semaine :
+<% data.sketches.week_1.each do |sketch| %>
+<figure>
+    <%= image_tag sketch.path, alt: "Croquis du #{sketch.datetime.day} juillet #{sketch.datetime.year}" %>
+    <figcaption>Croquis du <time datetime="#{sketch.datetime}">
+        <%= sketch.datetime.day %> juillet <%= sketch.datetime.year %></time>.
+    </figcaption>
+</figure>
+<% end %>
+
+Voilà pour les croquis de cette semaine et à la semaine prochaine pour une
+nouvelle fournée !

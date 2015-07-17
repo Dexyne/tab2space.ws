@@ -1,0 +1,22 @@
+week_1:
+  - sketch_1:
+    path: sketch/2015/07.06_sketches.jpeg
+    datetime: 2015-07-06
+  - sketch_2:
+    path: sketch/2015/07.07_sketches.jpeg
+    datetime: 2015-07-07
+  - sketch_3:
+    path: sketch/2015/07.08_sketches.jpeg
+    datetime: 2015-07-08
+  - sketch_4:
+    path: sketch/2015/07.09_sketches.jpeg
+    datetime: 2015-07-09
+  - sketch_5:
+    path: sketch/2015/07.10_sketches.jpeg
+    datetime: 2015-07-10
+  - sketch_6:
+    path: sketch/2015/07.11_sketches.jpeg
+    datetime: 2015-07-11
+  - sketch_7:
+    path: sketch/2015/07.12_sketches.jpeg
+    datetime: 2015-07-12
