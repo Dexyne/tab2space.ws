@@ -1,0 +1,23 @@
+---
+title: "Croquis de la semaine #2 !"
+date: 2015-07-27 CEST
+tags: croquis, dessin, illustration
+description: >
+  Les croquis de la semaine numéro 2.
+author: Aurélien Léger
+published: true
+---
+
+Semaine numéro 2 pour les croquis !
+
+<% data.sketches.week_2.each do |sketch| %>
+<figure>
+    <%= image_tag sketch.path, alt: "Croquis du #{sketch.datetime.day} juillet #{sketch.datetime.year}" %>
+    <figcaption>Croquis du <time datetime="<%= sketch.datetime %>">
+        <%= sketch.datetime.day %> juillet <%= sketch.datetime.year %></time>.
+    </figcaption>
+</figure>
+<% end %>
+
+Voilà pour les croquis de la semaine !
+
