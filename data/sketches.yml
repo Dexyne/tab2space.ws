@@ -44,4 +44,26 @@ week_2:
     path: sketch/2015/07.19_sketches.jpeg
     datetime: 2015-07-19
 
+week_3:
+  - sketch_1:
+    path: https://cdn.artstation.com/p/assets/images/images/000/979/300/large/aurelien-leger-2015-07-20-sketches.jpg
+    datetime: 2015-07-20
+  - sketch_2:
+    path: https://cdn.artstation.com/p/assets/images/images/000/983/608/large/aurelien-leger-2015-07-21-sketches.jpg
+    datetime: 2015-07-21
+  - sketch_3:
+    path: https://cdn.artstation.com/p/assets/images/images/000/986/588/large/aurelien-leger-2015-07-22-sketches.jpg
+    datetime: 2015-07-22
+  - sketch_4:
+    path: https://cdn.artstation.com/p/assets/images/images/000/991/423/large/aurelien-leger-2015-07-23-sketches.jpg
+    datetime: 2015-07-23
+  - sketch_5:
+    path: https://cdn.artstation.com/p/assets/images/images/000/995/429/large/aurelien-leger-2015-07-24-sketches.jpg
+    datetime: 2015-07-24
+  - sketch_6:
+    path: https://cdn.artstation.com/p/assets/images/images/000/996/125/large/aurelien-leger-2015-07-25-sketches.jpg 
+    datetime: 2015-07-25
+  - sketch_7:
+    path: https://cdn.artstation.com/p/assets/images/images/000/999/190/large/aurelien-leger-2015-07-26-sketches.jpg 
+    datetime: 2015-07-26
 
