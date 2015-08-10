@@ -1,0 +1,24 @@
+---
+title: "Croquis de la semaine #4 !"
+date: 2015-08-10 CEST
+tags: croquis, dessins, illustration
+description: >
+  Une 4ème fournée de croquis !
+author: Aurélien Léger
+published: true
+---
+
+Bien le bonjour ou le bonsoir.
+
+On se retrouve donc avec cette 4ème semaine de croquis, allant du 27 juillet au 2 août 2015.
+
+<% data.sketches.week_4.each do |sketch| %>
+<figure>
+    <%= image_tag sketch.path, alt: "Croquis du #{sketch.datetime.day} juillet #{sketch.datetime.year}" %>
+        <figcaption>Croquis du <time datetime="<%= sketch.datetime %>">
+            <%= sketch.datetime.day %> juillet <%= sketch.datetime.year %></time>.
+        </figcaption>
+</figure>
+<% end %>
+
+Et voilà pour cette 4ème série !
