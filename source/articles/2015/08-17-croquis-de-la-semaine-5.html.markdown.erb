@@ -1,0 +1,24 @@
+---
+title: "Croquis de la semaine #5 !"
+date: 2015-08-17 CEST
+tags: croquis, dessin, illustration
+description: >
+  Cinquième semaine de croquis !
+author: Aurélien Léger
+published: true
+---
+
+Encore un début de semaine avec cette fournée de nouveau croquis !
+
+C'est parti pour la semaine numéro 5, allant du 3 au 9 août 2015.
+
+<% data.sketches.week_5.each do |sketch| %>
+<figure>
+    <%= image_tag sketch.path, alt: "Croquis du #{sketch.datetime.day} juillet #{sketch.datetime.year}" %>
+    <figcaption>Croquis du <time datetime="<%= sketch.datetime %>">
+        <%= sketch.datetime.day %> août <%= sketch.datetime.year %></time>.
+    </figcaption>
+</figure>
+<% end %>
+
+Et voilà pour cette nouvelle semaine pleine de croquis !
