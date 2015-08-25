@@ -1,0 +1,24 @@
+---
+title: "Croquis de la semaine #6 !"
+date: 2015-08-25 CEST
+tags: croquis, dessin, illustration
+description: >
+  C'est parti pour une sixème semaine de croquis !
+author: Aurélien Léger
+published: true
+---
+
+Un petit jour de retard pour cette semaine de croquis dû à la Ludum Dare.
+
+Voici donc cette sixième semaine qui se déroule du 10 au 16 août 2015.
+
+<% data.sketches.week_6.each do |sketch| %>
+<figure>
+    <%= image_tag sketch.path, alt: "Croquis du #{sketch.datetime.day} juillet #{sketch.datetime.year}" %>
+    <figcaption>Croquis du <time datetime="<%= sketch.datetime %>">
+        <%= sketch.datetime.day %> août <%= sketch.datetime.year %></time>.
+    </figcaption>
+</figure>
+<% end %>
+
+Et voilà pour cette sixième petite semaine ! A la prochaine !
